@@ -16,6 +16,6 @@ function myFunc1() {
 
 textIn.addEventListener("click", myFunc2);
 function myFunc2(e) {
-  // e.target.remove();
-  console.log(e);
+  e.target.remove();
+  // console.log(e);
 }
