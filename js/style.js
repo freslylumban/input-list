@@ -10,7 +10,13 @@ function myFunc1() {
   let b = input.value;
   let text = document.createTextNode(b);
   a.appendChild(text);
-  textIn.appendChild(a);
+  if (b === "") {
+    alert("Input must be filled out");
+    return false;
+  } else {
+    textIn.appendChild(a);
+  }
+  input.value = "";
 }
 
 
